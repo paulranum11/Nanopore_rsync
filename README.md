@@ -1,6 +1,34 @@
 # Nanopore_rsync
 Live sync basecalled Nanopore reads from computer running the MinION to a server or location of your choice.
 
+
+Installing rsync:
+  YOU MUST INSTALL "rsync" AND ADD IT TO YOUR PATH ON BOTH THE LOCAL AND DESTINATION MACHINES FOR THIS TO WORK.
+  
+Installing rsync on Mac (using homebrew):
+# Install Homebrew.  Here is a link to their website for reference... you dont need to go here (https://brew.sh).
+# Open Terminal 
+# and type the following after the prompt
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install rsync
+$ brew install rsync
+
+# link rsync
+$ brew link rsync
+
+# Test rsync to see if it was installed and is accessible
+$ which rsync
+
+# You should see something like this
+$ which rsync
+usr/bin/rsync
+
+# Now you are ready to go.  To view the rsync documentation type 
+$ rsync -h
+
+
+
 This script was created to work on Mac computers which save MinION basecalled reads to /Library/MinKNOW/data/reads/pass
 
 It utilizes the rsync package using the recursive (-r) and time (-t) flags allowing it to sync files in sub directories

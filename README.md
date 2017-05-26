@@ -13,7 +13,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # Install rsync
 $ brew install rsync
-c
+
 # link rsync
 $ brew link rsync
 

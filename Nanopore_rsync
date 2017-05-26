@@ -1,0 +1,12 @@
+#!/bin/bash
+# This script will run rsync every half hour. Syncing the specified directory to the specified
+# destination directory.
+#
+# I use this to sync nanopore runs to the MORL storage server automaticaly while the run is
+# ongoing. 
+
+while true; do
+	echo “Running rsync”
+	rsync -r -t /Library/MinKNOW/data/reads/pass /Volumes/MORL/Analysis/ranum/Nanopore/Run6
+	sleep 1800
+done

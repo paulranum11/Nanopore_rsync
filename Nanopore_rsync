@@ -1,6 +1,6 @@
 #!/bin/bash
-# This script will run rsync every half hour. Syncing the specified directory to the specified
-# destination directory.
+# This script will run rsync every half hour. Syncing the specified "source" directory to the specified
+# "destination" directory.
 #
 # I use this to sync nanopore runs to the MORL storage server automaticaly while the run is
 # ongoing. 

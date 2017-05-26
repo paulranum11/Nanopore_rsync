@@ -39,7 +39,7 @@ $ chmod +x Nanopore_rsync
 # this is the /path/to/destination argument
 # After entering your destination folder save the Nanopore_rsync document.
 # Now you are ready to run Nanopore_rsync
-$ Nanopore_rsync
+$ bash Nanopore_rsync
 
 
 

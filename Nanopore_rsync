@@ -7,6 +7,6 @@
 
 while true; do
 	echo “Running rsync”
-	rsync -r -t /Library/MinKNOW/data/reads/pass /Path/to/destination
+	rsync -r -t /path/to/source /path/to/destination
 	sleep 1800
 done

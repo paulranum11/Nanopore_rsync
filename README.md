@@ -13,7 +13,7 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 # Install rsync
 $ brew install rsync
-
+c
 # link rsync
 $ brew link rsync
 
@@ -24,8 +24,23 @@ $ which rsync
 $ which rsync
 usr/bin/rsync
 
-# Now you are ready to go.  To view the rsync documentation type 
+# To view the rsync documentation type 
 $ rsync -h
+
+# Using Nanopore_rsync
+# Save Nanopore_rsync to your desktop.
+# Navigate to your desktop in terminal
+$ cd ~/Desktop
+
+# Make sure that Nanopore_rsync is executable
+$ chmod +x Nanopore_rsync
+
+# Using a text editor specify your destination folder (the location to which you would like to copy your nanopore output)
+# this is the /path/to/destination argument
+# After entering your destination folder save the Nanopore_rsync document.
+# Now you are ready to run Nanopore_rsync
+$ Nanopore_rsync
+
 
 
 
